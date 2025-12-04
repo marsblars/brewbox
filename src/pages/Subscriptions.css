@@ -1,0 +1,146 @@
+.subscriptions-page {
+    min-height: 100vh;
+    padding-bottom: 4rem;
+}
+
+.subscriptions-hero {
+    background: var(--gradient-primary);
+    padding: 4rem 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 4rem;
+}
+
+.subscriptions-hero h1 {
+    color: white;
+    margin-bottom: 0.75rem;
+}
+
+.subscriptions-hero p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.95);
+    margin: 0;
+}
+
+.subscriptions-intro {
+    margin-bottom: 4rem;
+}
+
+.subscriptions-intro h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.subscription-benefits {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 2rem;
+}
+
+.benefit-item {
+    text-align: center;
+    padding: 2rem 1.5rem;
+    background: white;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-md);
+    transition: all var(--transition-base);
+    border: 1px solid var(--border);
+}
+
+.benefit-item:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-purple);
+}
+
+.benefit-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.benefit-item h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+    font-family: var(--font-display);
+}
+
+.benefit-item p {
+    color: var(--text-secondary);
+    margin: 0;
+    font-size: 0.9375rem;
+}
+
+.subscriptions-products {
+    margin-bottom: 4rem;
+}
+
+.subscriptions-products h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* FAQ */
+.subscription-faq {
+    margin-top: 4rem;
+    padding-top: 4rem;
+    border-top: 2px solid var(--border);
+}
+
+.subscription-faq h2 {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.faq-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+}
+
+.faq-item {
+    padding: 2rem;
+    background: var(--gradient-card);
+    border-radius: var(--radius-xl);
+    border-left: 4px solid var(--primary-purple);
+}
+
+.faq-item h3 {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem;
+    color: var(--primary-purple);
+    font-family: var(--font-display);
+}
+
+.faq-item p {
+    color: var(--text-secondary);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .subscriptions-hero {
+        padding: 3rem 0;
+    }
+
+    .subscriptions-hero h1 {
+        font-size: 2rem;
+    }
+
+    .subscription-benefits,
+    .faq-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1.5rem;
+    }
+}
