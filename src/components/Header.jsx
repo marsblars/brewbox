@@ -18,7 +18,7 @@ const Header = () => {
                         <Link to="/" className="nav-link">Home</Link>
                         <Link to="/products" className="nav-link">Products</Link>
                         <Link to="/subscriptions" className="nav-link">Subscriptions</Link>
-                        <a href="#about" className="nav-link">About</a>
+                        <Link to="/about" className="nav-link">About</Link>
                     </nav>
 
                     <button onClick={toggleCart} className="cart-button" aria-label="Shopping cart">
